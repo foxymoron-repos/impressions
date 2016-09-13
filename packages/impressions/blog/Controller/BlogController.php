@@ -18,10 +18,10 @@ class BlogController extends Controller
 				'mostliked' 	=> $repo->findMostliked(),
 				'popular'		=> $repo->findPopular(),
 				'categories'	=> $em->getRepository('impressions\Blog\Model\PostCategory')
-										->fetchAll()
+										->findAll()
 		);
 		
-		return view('impressions.blog:index', $data);
+		return view('impressions.blog::blog.index', $data);
 	}
 	
 	public function item(Request $request, $id, $slug) {
@@ -34,7 +34,7 @@ class BlogController extends Controller
 			
 		}
 		
-		return view('impressions.blog:index');
+		return view('impressions.blog:item', array('post'=>$post));
 		
 	}
 	
@@ -108,12 +108,13 @@ class BlogController extends Controller
 				return redirect(route('post_list'))->with('error','The post with id '.$id.' doesnt exist');
 				
 			}
+			
 		} else {
 			
 			$post = new Post();
 		}
 		
-		return view('impressions.blog:form', array('data'=>$post));
+		return view('impressions.blog::blog.form', array('data'=>$post));
 	}
 	
 }

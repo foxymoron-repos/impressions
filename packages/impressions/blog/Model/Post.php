@@ -5,8 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="")
- * @ORM\Table(name="post")
+ * @ORM\Entity(repositoryClass="Impressions\Blog\Repository\PostRepository")
+ * @ORM\Table(name="blog_post")
  */
 class Post extends Model
 {

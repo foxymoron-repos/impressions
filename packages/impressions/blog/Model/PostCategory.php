@@ -2,6 +2,7 @@
 namespace Impressions\Blog\Model;
 
 use Illuminate\Database\Eloquent\Model;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="")
