@@ -24,9 +24,9 @@ class BlogController extends Controller
 		return view('impressions.blog::blog.index', $data);
 	}
 	
-	public function item(Request $request, $id, $slug) {
+	public function item(Request $request, $slug, $id) {
 		
-		$post = app('em')->find('impressions\Blog\Model\Post', $id);
+		$post = app('em')->find('Impressions\Blog\Model\Post', $id);
 		
 		if(!$post) {
 			
@@ -34,7 +34,7 @@ class BlogController extends Controller
 			
 		}
 		
-		return view('impressions.blog:item', array('post'=>$post));
+		return view('impressions.blog::blog.post', array('post'=>$post));
 		
 	}
 	
@@ -114,7 +114,7 @@ class BlogController extends Controller
 			$post = new Post();
 		}
 		
-		return view('impressions.blog::blog.form', array('data'=>$post));
+		return view('impressions.blog::blog.form', array('post'=>$post));
 	}
 	
 }

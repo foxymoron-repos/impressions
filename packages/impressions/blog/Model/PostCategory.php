@@ -1,14 +1,14 @@
 <?php
 namespace Impressions\Blog\Model;
 
-use Illuminate\Database\Eloquent\Model;
 use Doctrine\ORM\Mapping as ORM;
+use Impressions\Blog\Model;
 
 /**
- * @ORM\Entity(repositoryClass="")
+ * @ORM\Entity
  * @ORM\Table(name="post_category")
  */
-class PostCategory extends Model
+class PostCategory extends BaseModel
 {
 	/**
 	 * @ORM\Id
@@ -33,7 +33,7 @@ class PostCategory extends Model
 	protected $updatedAt;
 	
 	/**
-	 * @ORM\OneToMany(targetEntity="Post", mappedBy="category")
+	 * @ORM\OneToMany(targetEntity="Impressions\Blog\Model\Post", mappedBy="category")
 	 */
 	protected $posts;
 	

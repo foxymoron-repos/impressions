@@ -1,14 +1,14 @@
 <?php
 namespace Impressions\Blog\Model;
 
-use Illuminate\Database\Eloquent\Model;
 use Doctrine\ORM\Mapping as ORM;
+use Impressions\Blog\Model;
 
 /**
  * @ORM\Entity(repositoryClass="Impressions\Blog\Repository\PostRepository")
  * @ORM\Table(name="blog_post")
  */
-class Post extends Model
+class Post extends BaseModel
 {
 	/**
 	 * @ORM\Id 
@@ -22,7 +22,7 @@ class Post extends Model
 	 */
 	protected $title;
 	
-	/**
+	/**ImpressionsBlogModelPostCategory.php
 	 * @ORM\Column(type="string")
 	 */
 	protected $description;
@@ -33,7 +33,7 @@ class Post extends Model
 	protected $body;
 	
     /**
-     * @ORM\ManyToOne(targetEntity="PostCategory", inversedBy="posts")
+     * @ORM\ManyToOne(targetEntity="Impressions\Blog\Model\PostCategory", inversedBy="posts")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
 	protected $category;
