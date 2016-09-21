@@ -1,0 +1,141 @@
+#carousel-wrapper {			
+	position: relative;
+}
+[id*="carousel"], [id*="thumbs"] {
+	overflow: hidden;
+}
+
+
+[id*="carousel"] span, [id*="carousel"] img,
+[id*="thumbs"] a, [id*="thumbs"] img  {
+	display: block;
+	float: left;
+}
+[id*="carousel"] span, [id*="carousel"] a,
+[id*="thumbs"] span, [id*="thumbs"] a {
+	position: relative;
+}
+
+[id*="thumbs"] img {
+	/*height:100%;
+	width:100%;*/
+	
+	width:100px;	
+	
+	border: none;			
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+[id*="carousel"] .span12 img{
+	width:99.8%;
+	border: none;			
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-bottom:1px solid #d4d4d4;
+}
+
+
+[id*="carousel"] img.glare,
+[id*="thumbs"] img.glare {
+	width: 102%;
+	height: auto;
+}
+
+[id*="carousel"] span {
+	width: 554px;
+	height: 450px;
+}
+
+.crouseltext{
+	padding:10px 10px 0px 10px;margin-top: 253px;
+}
+
+#thumbs-wrapper {
+	padding: 20px 40px;
+	position: relative;
+}
+[id*="thumbs"] a {	
+	width: 150px;
+	height: 100px;
+	margin: 0 10px;
+	overflow: hidden;
+
+}
+[id*="thumbs"] a:hover, [id*="thumbs"] a.selected {
+	border-color: #566;
+}
+
+#wrapper img#shadow {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#prev, #next,
+#prev1, #next1,
+#prev2, #next2,
+#prev3, #next3,
+#prev4, #next4,
+#prev5, #next5,
+#prev6, #next6,
+#prev7, #next7,
+#prev8, #next8,
+#prev9, #next9,
+#prev10, #next10 {			
+	display: block;
+	width: 11px;
+	height: 25px;
+	margin-top: -10px;
+	position: absolute;
+	top: 50%;
+}
+
+[id*="prev"] {
+	background:url('../img/gleft.png') no-repeat;
+	left: 10px;
+}
+
+[id*="next"] {
+	background:url('../img/gright.png') no-repeat;
+	right: 10px;
+}			
+			
+#carousel h3{
+	font-size:20px;
+	font-weight:400;
+	position:relative;
+}
+
+#carousel p{
+	position:relative;
+	font-size:13px;
+}
+
+
+
+@media (min-width: 480px) and (max-width: 760px){
+	[id*="carousel"] span {
+		width: 554px;
+		height: 600px;
+	}
+	
+	.crouseltext{
+		margin-top: 380px;
+	}
+	
+		
+}
+
+@media (min-width: 300px) and (max-width: 460px){
+	[id*="carousel"] span {
+		width: 554px;
+		height: 600px;
+	}
+		
+	.crouseltext{
+		margin-top: 180px;
+	}
+}
