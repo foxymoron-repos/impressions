@@ -653,6 +653,7 @@ input, select, textarea {
 .blog-carousel{
 	height:400px;
 	display:table;
+	width:90%;
 }
 
 .blog-carousel-banner{
@@ -678,6 +679,10 @@ input, select, textarea {
 	font-size:14px;
 	line-height:1.5em;
 	margin-top:1em;
+}
+
+.view-h3-clr{
+	color:#999999;
 }
 
 @media (max-width: 979px) {
@@ -900,5 +905,18 @@ input, select, textarea {
 	}
 	.blog-banner-p1{
 		font-size:12px;
+	}
+	.blog-carousel{
+		height:250px;
+	}
+	.view-h3-clr{
+		font-size:1.2em;
+	}
+	
+	.blog-carousel-banner-resize .span5,.blog-carousel-banner-resize .span4 {
+		display:none;
+	}
+	.blog-mrgbottombtn{
+		margin-bottom:0;
 	}
 }
