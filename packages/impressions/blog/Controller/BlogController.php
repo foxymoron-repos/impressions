@@ -33,7 +33,6 @@ class BlogController extends Controller
 			abort(404, 'Post not found');
 			
 		}
-		
 		return view('impressions.blog::blog.post', array('post'=>$post));
 		
 	}

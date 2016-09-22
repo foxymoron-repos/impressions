@@ -19,7 +19,7 @@
 						<div style="text-align: right; margin-right: 30px;">
 							Email : av@impressionsid.com <br>
 							Mobile No : +91 98201 09714 </div>
-							<a class="brand" href="http://www.impressionsid.com/"><img src="http://www.impressionsid.com/img/logo.png" style="padding: 0px 20px 0px;"></a>
+							<a class="brand" href="http://www.impressionsid.com/"><img src="{{ asset('img/logo.png')}}" style="padding: 0px 20px 0px;"></a>
 							<div class="nav-collapse collapse pull-right" style="margin-top:15px; font-size:18px;">        	
 								<ul class="nav">
 									<li class=" ">
@@ -30,11 +30,11 @@
 										<ul class="dropdown-menu mega-menu">
 											<div class="head">
 												<span class="span2">
-													<img src="http://www.impressionsid.com/img/menudiv.png">
+													<img src="{{ asset('img/menudiv.png')}}">
 												</span>
 												<span class="span2">TOP PRODUCTS</span>
 												<span class="span2">
-													<img src="http://www.impressionsid.com/img/menudiv.png">
+													<img src="{{ asset('img/menudiv.png')}}">
 												</span>
 											</div>
 											<div style="clear:both;"></div>
@@ -66,7 +66,7 @@
 										</ul>
 									</li>
 									<li class=""><a href="http://www.impressionsid.com/about-us">About</a></li>
-									<li class="active"><a href="http://www.impressionsid.com/blog">Blog</a></li>
+									<li class=""><a href="http://www.impressionsid.com/blog">Blog</a></li>
 									<li class=""><a href="http://www.impressionsid.com/contact-us">Contact</a></li>
 								</ul> 
 							</div>
@@ -100,11 +100,11 @@
 						</div>
 					</div>
               <!-- Carousel nav -->
-              <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="http://www.impressionsid.com/img/left.png" width="13" height="32"></a>
-              <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="http://www.impressionsid.com/img/right.png" width="13" height="32"></a>
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="{{ asset('img/left.png')}}" width="13" height="32"></a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="{{ asset('img/right.png')}}" width="13" height="32"></a>
             </div>
 			
-			<ol class="carousel-linked-nav pagination"><li class=""><a href="#1"><img src="http://www.impressionsid.com/img/dot.png" width="14" height="12"></a></li><li class=""><a href="#2"><img src="http://www.impressionsid.com/img/dot.png" width="14" height="12"></a></li></ol>
+			<ol class="carousel-linked-nav pagination"><li class=""><a href="#1"><img src="{{ asset('img/dot.png')}}" width="14" height="12"></a></li><li class=""><a href="#2"><img src="{{ asset('img/dot.png')}}" width="14" height="12"></a></li></ol>
 			</div>
 		</div>
 		<div class="container">
@@ -242,7 +242,7 @@
 
 				</div>
 
-				<div class="pull-right" style="width:auto;"> <img src="http://www.impressionsid.com/img/befoxy.png"> </div>
+				<div class="pull-right" style="width:auto;"> <img src="{{ asset('img/befoxy.png')}}"> </div>
 
 			</div>
 

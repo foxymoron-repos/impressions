@@ -2,7 +2,6 @@
 namespace Impressions\Blog\Model;
 
 use Doctrine\ORM\Mapping as ORM;
-use Impressions\Blog\Model;
 
 /**
  * @ORM\Entity(repositoryClass="Impressions\Blog\Repository\PostRepository")

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css')}}"/>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-responsive.css')}}"/>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/gallerycrousal.css')}}"/>
+		<link rel="stylesheet" type="text/css" href="{{ asset('css/nanoscroller.css')}}"/>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}"/>
 	</head>
 	<body>
@@ -19,7 +20,7 @@
 						<div style="text-align: right; margin-right: 30px;">
 							Email : av@impressionsid.com <br>
 							Mobile No : +91 98201 09714 </div>
-							<a class="brand" href="http://www.impressionsid.com/"><img src="http://www.impressionsid.com/img/logo.png" style="padding: 0px 20px 0px;"></a>
+							<a class="brand" href="http://www.impressionsid.com/"><img src="{{ asset('img/logo.png')}}" style="padding: 0px 20px 0px;"></a>
 							<div class="nav-collapse collapse pull-right" style="margin-top:15px; font-size:18px;">        	
 								<ul class="nav">
 									<li class=" ">
@@ -30,11 +31,11 @@
 										<ul class="dropdown-menu mega-menu">
 											<div class="head">
 												<span class="span2">
-													<img src="http://www.impressionsid.com/img/menudiv.png">
+													<img src="{{ asset('img/menudiv.png')}}">
 												</span>
 												<span class="span2">TOP PRODUCTS</span>
 												<span class="span2">
-													<img src="http://www.impressionsid.com/img/menudiv.png">
+													<img src="{{ asset('img/menudiv.png')}}">
 												</span>
 											</div>
 											<div style="clear:both;"></div>
@@ -66,7 +67,7 @@
 										</ul>
 									</li>
 									<li class=""><a href="http://www.impressionsid.com/about-us">About</a></li>
-									<li class="active"><a href="http://www.impressionsid.com/blog">Blog</a></li>
+									<li class=""><a href="http://www.impressionsid.com/blog">Blog</a></li>
 									<li class=""><a href="http://www.impressionsid.com/contact-us">Contact</a></li>
 								</ul> 
 							</div>
@@ -74,7 +75,7 @@
 					</div>
 				</div>
 
-				<div id="myCarousel" class="carousel slide">             
+				<div id="myCarousel1" class="carousel slide">             
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="carousel-inner-inner blog-carousel" style="background:url({{ asset('img/blog/banner.jpg')}});background-size:100% 100%;">    
@@ -116,11 +117,11 @@
 						</div>
 					</div>
               <!-- Carousel nav -->
-              <a class="carousel-control left" href="#myCarousel" data-slide="prev"><img src="http://www.impressionsid.com/img/left.png" width="13" height="32"></a>
-              <a class="carousel-control right" href="#myCarousel" data-slide="next"><img src="http://www.impressionsid.com/img/right.png" width="13" height="32"></a>
+              <a class="carousel-control left" href="#myCarousel1" data-slide="prev"><img src="{{ asset('img/left.png')}}" width="13" height="32"></a>
+              <a class="carousel-control right" href="#myCarousel1" data-slide="next"><img src="{{ asset('img/right.png')}}" width="13" height="32"></a>
             </div>
 			
-			<ol class="carousel-linked-nav pagination"><li class=""><a href="#1"><img src="http://www.impressionsid.com/img/dot.png" width="14" height="12"></a></li><li class=""><a href="#2"><img src="http://www.impressionsid.com/img/dot.png" width="14" height="12"></a></li></ol>
+			<ol class="carousel-linked-nav carousel-linked-nav1 pagination"><li class="active"><a href="#1"><img src="{{ asset('img/overdot.png')}}" width="14" height="12"></a></li><li class=""><a href="#2"><img src="{{ asset('img/dot.png')}}" width="14" height="12"></a></li></ol>
 			</div>
 		</div>
 	
@@ -142,7 +143,7 @@
 						<div class="span3">
 							<div class="btn-primary blog-button">Read More</div>
 						</div>
-						<div class="span9 "></div>
+						<div class="span9"></div>
 					</div>
 					<div class="blog-bkg-img"  style="background:url({{ asset('img/blog/img2.jpg')}});background-size:100% 100%;"></div>
 					<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
@@ -156,61 +157,130 @@
 						<div class="span9 "></div>
 					</div>
 					<h1 class="blog-txt-drk">Related Articles</h1>
-					<div class="row-fluid">
-						<div class="span6">
-							<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img3.jpg')}});background-size:100% 100%;"></div>
-							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
-							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
-							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
-							<div class="row-fluid blog-mrgbottombtn">
-								<div class="span6">
-									<div class="btn-primary blog-button">Read More</div>
+					
+					<div id="myCarousel2" class="carousel slide">  
+						<div class="carousel-inner">
+							<div class="item active">
+								<div class="carousel-inner-inner">    
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img3.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img4.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+									</div>
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img5.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img6.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="span6"></div>
 							</div>
-						</div>
-						<div class="span6">
-							<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img4.jpg')}});background-size:100% 100%;"></div>
-							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
-							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
-							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
-							<div class="row-fluid blog-mrgbottombtn">
-								<div class="span6">
-									<div class="btn-primary blog-button">Read More</div>
+					
+							<div class="item">
+								<div class="carousel-inner-inner">
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img3.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+											<div class="span6"></div>
+											</div>
+										</div>
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img4.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+									</div>
+									<div class="row-fluid">
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img5.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+										<div class="span6">
+											<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img6.jpg')}});background-size:100% 100%;"></div>
+											<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+											<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+											<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+											<div class="row-fluid blog-mrgbottombtn">
+												<div class="span6">
+													<div class="btn-primary blog-button">Read More</div>
+												</div>
+												<div class="span6"></div>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="span6"></div>
 							</div>
-						</div>
 					</div>
-					<div class="row-fluid">
-						<div class="span6">
-							<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img5.jpg')}});background-size:100% 100%;"></div>
-							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
-							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
-							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
-							<div class="row-fluid blog-mrgbottombtn">
-								<div class="span6">
-									<div class="btn-primary blog-button">Read More</div>
-								</div>
-								<div class="span6"></div>
-							</div>
-						</div>
-						<div class="span6">
-							<div class="blog-bkg1-img"  style="background:url({{ asset('img/blog/img6.jpg')}});background-size:100% 100%;"></div>
-							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
-							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
-							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
-							<div class="row-fluid blog-mrgbottombtn">
-								<div class="span6">
-									<div class="btn-primary blog-button">Read More</div>
-								</div>
-								<div class="span6"></div>
-							</div>
-						</div>
+					<ol class="carousel-linked-nav carousel-linked-nav2 pagination"><li class="active"><a href="#1"><img src="{{ asset('img/overdot.png')}}" width="14" height="12"></a></li><li class=""><a href="#2"><img src="{{ asset('img/dot.png')}}" width="14" height="12"></a></li></ol>
 					</div>
 				</div>
 				<div class="span6">
 					<h3 class="blog-txt-drk blog-content-lft">All Categories</h3>
+					<div id="blog-nano" class="nano blog-brdrbottom">
+					<div class="blog-nano-content nano-content">
 					<div class="row-fluid">
 						<div class="span10">
 							<p>Advertising</p>
@@ -267,7 +337,63 @@
 							<p>(10)</p>
 						</div>
 					</div>
-					<div class="row-fluid blog-brdrbottom">
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Advertising</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Creative</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Inspiration</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Life</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Music</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Photography</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="span10">
+							<p>Readolog</p>
+						</div>
+						<div class="span2 blog-rgtalign">
+							<p>(10)</p>
+						</div>
+					</div>
+					<div class="row-fluid">
 						<div class="span10">
 							<p>Travel</p>
 						</div>
@@ -275,7 +401,11 @@
 							<p>(10)</p>
 						</div>
 					</div>
+					</div>
+					</div>
 					<h3 class="blog-txt-drk blog-content-lft blog-popular">Popular Articles</h3>
+					<div id="blog-nano1" class="nano">
+					<div class="blog-nano-content1 nano-content">
 					<div class="row-fluid blog-mrgbottom1">
 						<div class="span3">
 							<div class="blog-bkg2-img" style="background:url({{ asset('img/blog/img1.jpg')}});background-size:100% 100%;"></div>
@@ -315,11 +445,83 @@
 							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
 							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
 						</div>
+					</div>
+					<div class="row-fluid blog-mrgbottom1">
+						<div class="span3">
+							<div class="blog-bkg2-img" style="background:url({{ asset('img/blog/img1.jpg')}});background-size:100% 100%;"></div>
+						</div>
+						<div class="span9 blog-pdgleft">
+							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+						</div>
+					</div>
+					<div class="row-fluid blog-mrgbottom1">
+						<div class="span3">
+							<div class="blog-bkg2-img" style="background:url({{ asset('img/blog/img1.jpg')}});background-size:100% 100%;"></div>
+						</div>
+						<div class="span9 blog-pdgleft">
+							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+						</div>
+					</div>
+					<div class="row-fluid blog-mrgbottom1">
+						<div class="span3">
+							<div class="blog-bkg2-img" style="background:url({{ asset('img/blog/img1.jpg')}});background-size:100% 100%;"></div>
+						</div>
+						<div class="span9 blog-pdgleft">
+							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+						</div>
+					</div>
+					<div class="row-fluid blog-mrgbottom1">
+						<div class="span3">
+							<div class="blog-bkg2-img" style="background:url({{ asset('img/blog/img1.jpg')}});background-size:100% 100%;"></div>
+						</div>
+						<div class="span9 blog-pdgleft">
+							<p class="blog-mrgzero blog-capitalize">JANUARY 28. 2016</p>
+							<h3 class="blog-mrgzero blog-txt-drk">Tittle of the post</h3>
+							<h6 class="blog-h6 blog-mrgzero blog-capitalize">Category Name</h6>
+						</div>
+					</div>
+					</div>
 					</div>
 					<h3 class="blog-txt-drk blog-content-lft blog-like">Like us on Facebook</h3>
 					<img class="blog-brdrbottom" src="{{ asset('img/blog/img7.jpg')}}">
 					<h3 class="blog-txt-drk blog-content-lft blog-insta">Our Instagram Feed</h3>
+					<div id="blog-nano2" class="nano blog-brdrbottom">
+					<div class="blog-nano-content2 nano-content">
 					<div class="row-fluid">
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+					</div>
+					<div class="row-fluid blog-insta blog-insta1">
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+						<div class="span3 blog-feed">
+							<img src="{{ asset('img/blog/img8.jpg')}}">
+						</div>
+					</div>
+					<div class="row-fluid blog-insta blog-insta1">
 						<div class="span3 blog-feed">
 							<img src="{{ asset('img/blog/img8.jpg')}}">
 						</div>
@@ -347,7 +549,7 @@
 							<img src="{{ asset('img/blog/img8.jpg')}}">
 						</div>
 					</div>
-					<div class="row-fluid blog-insta blog-brdrbottom">
+					<div class="row-fluid blog-insta">
 						<div class="span3 blog-feed">
 							<img src="{{ asset('img/blog/img8.jpg')}}">
 						</div>
@@ -361,8 +563,25 @@
 							<img src="{{ asset('img/blog/img8.jpg')}}">
 						</div>
 					</div>
+					</div>
+					</div>
 					<h3 class="blog-txt-drk blog-content-lft blog-video">All Videos</h3>
-						<img src="{{ asset('img/blog/img9.jpg')}}">
+						
+						<div id="myCarousel3" class="carousel slide"> 
+							<div class="carousel-inner">
+								<div class="item active">
+									<div class="carousel-inner-inner">    
+										<img src="{{ asset('img/blog/img9.jpg')}}">
+									</div>
+								</div>
+								<div class="item">
+									<div class="carousel-inner-inner">    
+										<img src="{{ asset('img/blog/img9.jpg')}}">
+									</div>
+								</div>
+							</div>
+							<ol class="carousel-linked-nav carousel-linked-nav3 pagination"><li class="active"><a href="#1"><img src="{{ asset('img/overdot.png')}}" width="14" height="12"></a></li><li class=""><a href="#2"><img src="{{ asset('img/dot.png')}}" width="14" height="12"></a></li></ol>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -434,7 +653,7 @@
 
 				</div>
 
-				<div class="pull-right" style="width:auto;"> <img src="http://www.impressionsid.com/img/befoxy.png"> </div>
+				<div class="pull-right" style="width:auto;"> <img src="{{ asset('img/befoxy.png')}}"> </div>
 
 			</div>
 
@@ -444,5 +663,6 @@
 		<script type="text/javascript" src="{{ asset('js/jquery.js')}}"></script>
 		<script type="text/javascript" src="{{ asset('js/bootstrap.min.js')}}"></script>
 		<script type="text/javascript" src="{{ asset('js/blog-cruousel.js')}}"></script>
+		<script type="text/javascript" src="{{ asset('js/jquery.nanoscroller.min.js')}}"></script>
 	</body>
 </html>
