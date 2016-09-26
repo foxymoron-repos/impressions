@@ -43,7 +43,7 @@ $('.carousel-linked-nav1 > li > a').click(function() {
     // remove current active class
 
     $('.carousel-linked-nav1 li').removeClass('active');
-	$('.carousel-linked-nav1 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav1 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     // add active class to just clicked on item
 	
 	$(this).html('<img src="../img/overdot.png" width="14" height="12">');
@@ -61,7 +61,7 @@ $('.carousel-linked-nav1 > li > a').click(function() {
 $('#myCarousel1').bind('slid', function() {
 	
     // remove active class
-	$('.carousel-linked-nav1 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav1 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     $('.carousel-linked-nav1 li').removeClass('active');
 
     // get index of currently active item
@@ -69,7 +69,7 @@ $('#myCarousel1').bind('slid', function() {
 	
     // select currently active item and add active class
     $('.carousel-linked-nav1 li:eq(' + idx + ')').addClass('active');
-	$('.carousel-linked-nav1 li:eq(' + idx + ') > a').html('<img src="../img/overdot.png" width="14" height="12">');	
+	$('.carousel-linked-nav1 li:eq(' + idx + ') > a').html('<img src="'+base_url+'/img/overdot.png" width="14" height="12">');	
 	
 
 });
@@ -85,7 +85,7 @@ $('.carousel-linked-nav2 > li > a').click(function() {
     // remove current active class
 
     $('.carousel-linked-nav2 li').removeClass('active');
-	$('.carousel-linked-nav2 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav2 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     // add active class to just clicked on item
 	
 	$(this).html('<img src="../img/overdot.png" width="14" height="12">');
@@ -102,7 +102,7 @@ $('.carousel-linked-nav2 > li > a').click(function() {
 // bind 'slid' function
 $('#myCarousel2').bind('slid', function() {
     // remove active class
-	$('.carousel-linked-nav2 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav2 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     $('.carousel-linked-nav2 li').removeClass('active');
 
     // get index of currently active item
@@ -110,7 +110,7 @@ $('#myCarousel2').bind('slid', function() {
 	
     // select currently active item and add active class
     $('.carousel-linked-nav2 li:eq(' + idx + ')').addClass('active');
-	$('.carousel-linked-nav2 li:eq(' + idx + ') > a').html('<img src="../img/overdot.png" width="14" height="12">');	
+	$('.carousel-linked-nav2 li:eq(' + idx + ') > a').html('<img src="'+base_url+'/img/overdot.png" width="14" height="12">');	
 	
 
 });
@@ -127,7 +127,7 @@ $('.carousel-linked-nav3 > li > a').click(function() {
     // remove current active class
 
     $('.carousel-linked-nav3 li').removeClass('active');
-	$('.carousel-linked-nav3 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav3 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     // add active class to just clicked on item
 	
 	$(this).html('<img src="../img/overdot.png" width="14" height="12">');
@@ -144,7 +144,7 @@ $('.carousel-linked-nav3 > li > a').click(function() {
 // bind 'slid' function
 $('#myCarousel3').bind('slid', function() {
     // remove active class
-	$('.carousel-linked-nav3 li a').html('<img src="../img/dot.png" width="14" height="12">');
+	$('.carousel-linked-nav3 li a').html('<img src="'+base_url+'/img/dot.png" width="14" height="12">');
     $('.carousel-linked-nav3 li').removeClass('active');
 
     // get index of currently active item
@@ -152,7 +152,7 @@ $('#myCarousel3').bind('slid', function() {
 	
     // select currently active item and add active class
     $('.carousel-linked-nav3 li:eq(' + idx + ')').addClass('active');
-	$('.carousel-linked-nav3 li:eq(' + idx + ') > a').html('<img src="../img/overdot.png" width="14" height="12">');	
+	$('.carousel-linked-nav3 li:eq(' + idx + ') > a').html('<img src="'+base_url+'/img/overdot.png" width="14" height="12">');	
 	
 
 });

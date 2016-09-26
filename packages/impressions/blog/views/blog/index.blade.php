@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/gallerycrousal.css')}}"/>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/nanoscroller.css')}}"/>
 		<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css')}}"/>
+		<script>var base_url = "{{ asset('/') }}";</script>
 	</head>
 	<body>
 		<div id="intro">
